@@ -1,0 +1,51 @@
+
+
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100%;
+  font-family: 'Arial', sans-serif;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  background: #fafafa;
+  padding: 40px 0;
+  box-sizing: border-box;
+  justify-content: center;
+
+  &__logo {
+    display: inline-block;
+    width: 120px;
+    height: 44px;
+    background: url("../img/googlelogo.png")center no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    transition: transform 1s;
+  }
+  .flip {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  height: 300px;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 1px 1px 1px 0 #1abc9c;
+  border-radius: 50%;
+
+  &__google {
+    display: block;
+    position: relative;
+    width: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
